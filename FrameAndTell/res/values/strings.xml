@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Frame &amp; Tell</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="todo">TODO</string>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+    <string name="make">Make</string>
+    <string name="read">Read</string>
+
+    <!-- NewStory -->
+    <string name="title_activity_new_story">NewStoryActivity</string>
+    <string name="new_story">New Story</string>
+    <string name="choose_template">Choose your Template</string>
+    <string name="title">Title</string>
+    <string name="hint_title">Enter title here</string>
+
+    <!-- Timeline -->
+    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="timeline">Timeline</string>
+    <string name="new_panel">New Panel</string>
+
+    <!-- EditPanel -->
+    <string name="title_activity_edit_panel">EditPanelActivity</string>
+    <string name="edit_panel">Edit Panel</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_text">Add Text</string>
+
+    <!-- Reader -->
+    <string name="title_activity_reader">ReaderActivity</string>
+    <string name="reader">Reader</string>
+    <string name="library">Library</string>
+
+    <!-- dialogs -->
+    <string name="save">Save</string>
+    <string name="save_change">Saved changes.</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_change">Cancelled changes.</string>
+    <string name="ok">OK</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+</resources>
