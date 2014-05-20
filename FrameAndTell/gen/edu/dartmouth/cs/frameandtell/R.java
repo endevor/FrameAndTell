@@ -69,9 +69,11 @@ public final class R {
         public static final int tab_unselected_focused_frameandtell=0x7f02002d;
         public static final int tab_unselected_frameandtell=0x7f02002e;
         public static final int tab_unselected_pressed_frameandtell=0x7f02002f;
-        public static final int timeline_icon=0x7f020030;
-        public static final int undo_btn=0x7f020031;
-        public static final int yellow_background=0x7f020032;
+        public static final int timeline_bkgd=0x7f020030;
+        public static final int timeline_icon=0x7f020031;
+        public static final int timeline_img=0x7f020032;
+        public static final int undo_btn=0x7f020033;
+        public static final int yellow_background=0x7f020034;
     }
     public static final class id {
         public static final int action_home=0x7f080006;
