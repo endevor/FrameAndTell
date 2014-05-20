@@ -1,9 +1,17 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.dartmouth.cs.frameandtell" >
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:id="@+id/action_home"
+        android:icon="@drawable/home_icon"
+        android:showAsAction="ifRoom"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/activity_timeline"
+        android:icon="@drawable/timeline_icon"
+        android:showAsAction="ifRoom"
+        android:title="@string/timeline"/>
 
 </menu>

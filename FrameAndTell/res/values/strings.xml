@@ -10,7 +10,7 @@
     <string name="home">Home</string>
     <string name="make">Make</string>
     <string name="read">Read</string>
-
+    
     <!-- NewStory -->
     <string name="title_activity_new_story">NewStoryActivity</string>
     <string name="new_story">New Story</string>
@@ -28,6 +28,7 @@
     <string name="edit_panel">Edit Panel</string>
     <string name="add_image">Add Image</string>
     <string name="add_text">Add Text</string>
+    <string name="undo_btn"> Undo</string>
 
     <!-- Reader -->
     <string name="title_activity_reader">ReaderActivity</string>

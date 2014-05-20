@@ -43,41 +43,45 @@ public final class R {
         public static final int down_arrow_icon=0x7f020013;
         public static final int home_bkgd_img=0x7f020014;
         public static final int home_icon=0x7f020015;
-        public static final int ic_launcher=0x7f020016;
-        public static final int list_focused_frameandtell=0x7f020017;
-        public static final int list_pressed_frameandtell=0x7f020018;
-        public static final int menu_dropdown_panel_frameandtell=0x7f020019;
-        public static final int plus_btn=0x7f02001a;
-        public static final int progress_bg_frameandtell=0x7f02001b;
-        public static final int progress_horizontal_frameandtell=0x7f02001c;
-        public static final int progress_primary_frameandtell=0x7f02001d;
-        public static final int progress_secondary_frameandtell=0x7f02001e;
-        public static final int save_btn=0x7f02001f;
-        public static final int selectable_background_frameandtell=0x7f020020;
-        public static final int side_arrow_btn=0x7f020021;
-        public static final int spinner_ab_default_frameandtell=0x7f020022;
-        public static final int spinner_ab_disabled_frameandtell=0x7f020023;
-        public static final int spinner_ab_focused_frameandtell=0x7f020024;
-        public static final int spinner_ab_pressed_frameandtell=0x7f020025;
-        public static final int spinner_background_ab_frameandtell=0x7f020026;
-        public static final int tab_indicator_ab_frameandtell=0x7f020027;
-        public static final int tab_selected_focused_frameandtell=0x7f020028;
-        public static final int tab_selected_frameandtell=0x7f020029;
-        public static final int tab_selected_pressed_frameandtell=0x7f02002a;
-        public static final int tab_unselected_focused_frameandtell=0x7f02002b;
-        public static final int tab_unselected_frameandtell=0x7f02002c;
-        public static final int tab_unselected_pressed_frameandtell=0x7f02002d;
-        public static final int timeline_icon=0x7f02002e;
-        public static final int undo_btn=0x7f02002f;
-        public static final int yellow_background=0x7f020030;
+        public static final int home_new_story_btn=0x7f020016;
+        public static final int ic_launcher=0x7f020017;
+        public static final int list_focused_frameandtell=0x7f020018;
+        public static final int list_pressed_frameandtell=0x7f020019;
+        public static final int menu_dropdown_panel_frameandtell=0x7f02001a;
+        public static final int orange_background=0x7f02001b;
+        public static final int plus_btn=0x7f02001c;
+        public static final int progress_bg_frameandtell=0x7f02001d;
+        public static final int progress_horizontal_frameandtell=0x7f02001e;
+        public static final int progress_primary_frameandtell=0x7f02001f;
+        public static final int progress_secondary_frameandtell=0x7f020020;
+        public static final int save_btn=0x7f020021;
+        public static final int selectable_background_frameandtell=0x7f020022;
+        public static final int side_arrow_btn=0x7f020023;
+        public static final int spinner_ab_default_frameandtell=0x7f020024;
+        public static final int spinner_ab_disabled_frameandtell=0x7f020025;
+        public static final int spinner_ab_focused_frameandtell=0x7f020026;
+        public static final int spinner_ab_pressed_frameandtell=0x7f020027;
+        public static final int spinner_background_ab_frameandtell=0x7f020028;
+        public static final int tab_indicator_ab_frameandtell=0x7f020029;
+        public static final int tab_selected_focused_frameandtell=0x7f02002a;
+        public static final int tab_selected_frameandtell=0x7f02002b;
+        public static final int tab_selected_pressed_frameandtell=0x7f02002c;
+        public static final int tab_unselected_focused_frameandtell=0x7f02002d;
+        public static final int tab_unselected_frameandtell=0x7f02002e;
+        public static final int tab_unselected_pressed_frameandtell=0x7f02002f;
+        public static final int timeline_icon=0x7f020030;
+        public static final int undo_btn=0x7f020031;
+        public static final int yellow_background=0x7f020032;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
-        public static final int button1=0x7f080001;
-        public static final int button2=0x7f080002;
-        public static final int button3=0x7f080003;
+        public static final int action_home=0x7f080006;
+        public static final int activity_timeline=0x7f080007;
+        public static final int button1=0x7f080000;
+        public static final int button2=0x7f080001;
+        public static final int button3=0x7f080002;
         public static final int button4=0x7f080004;
-        public static final int textView1=0x7f080000;
+        public static final int button5=0x7f080003;
+        public static final int textView1=0x7f080005;
     }
     public static final class layout {
         public static final int activity_edit_panel=0x7f030000;
@@ -98,9 +102,9 @@ public final class R {
         public static final int add_image=0x7f050011;
         public static final int add_text=0x7f050012;
         public static final int app_name=0x7f050000;
-        public static final int back=0x7f05001c;
-        public static final int cancel=0x7f050018;
-        public static final int cancel_change=0x7f050019;
+        public static final int back=0x7f05001d;
+        public static final int cancel=0x7f050019;
+        public static final int cancel_change=0x7f05001a;
         public static final int choose_template=0x7f050009;
         public static final int edit_panel=0x7f050010;
         public static final int hello_world=0x7f050002;
@@ -108,18 +112,18 @@ public final class R {
         /**  Home 
          */
         public static final int home=0x7f050004;
-        public static final int library=0x7f050015;
+        public static final int library=0x7f050016;
         public static final int make=0x7f050005;
         public static final int new_panel=0x7f05000e;
         public static final int new_story=0x7f050008;
-        public static final int next=0x7f05001b;
-        public static final int ok=0x7f05001a;
+        public static final int next=0x7f05001c;
+        public static final int ok=0x7f05001b;
         public static final int read=0x7f050006;
-        public static final int reader=0x7f050014;
+        public static final int reader=0x7f050015;
         /**  dialogs 
          */
-        public static final int save=0x7f050016;
-        public static final int save_change=0x7f050017;
+        public static final int save=0x7f050017;
+        public static final int save_change=0x7f050018;
         public static final int timeline=0x7f05000d;
         public static final int title=0x7f05000a;
         /**  EditPanel 
@@ -130,11 +134,12 @@ public final class R {
         public static final int title_activity_new_story=0x7f050007;
         /**  Reader 
          */
-        public static final int title_activity_reader=0x7f050013;
+        public static final int title_activity_reader=0x7f050014;
         /**  Timeline 
          */
         public static final int title_activity_timeline=0x7f05000c;
         public static final int todo=0x7f050003;
+        public static final int undo_btn=0x7f050013;
     }
     public static final class style {
         public static final int ActionBar_Solid_Frameandtell=0x7f060003;
