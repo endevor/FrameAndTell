@@ -31,9 +31,7 @@ public class TimelineActivity extends Activity {
 	    		startActivity(intent);
 	            return true;
 	        case R.id.activity_timeline:
-	    		Intent intent1 = new Intent(getApplicationContext(),
-	    				TimelineActivity.class);
-	    		startActivity(intent1);
+	
 	           return true;
 	        default:
 	            return super.onOptionsItemSelected(item);

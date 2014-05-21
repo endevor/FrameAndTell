@@ -27,9 +27,7 @@ public class HomeActivity extends Activity {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
 	        case R.id.action_home:
-	    		Intent intent = new Intent(getApplicationContext(),
-	    				HomeActivity.class);
-	    		startActivity(intent);
+	
 	            return true;
 	        case R.id.activity_timeline:
 	    		Intent intent1 = new Intent(getApplicationContext(),
