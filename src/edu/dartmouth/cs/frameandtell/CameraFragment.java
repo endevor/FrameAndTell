@@ -115,26 +115,26 @@ public class CameraFragment extends Fragment {
 	 */
 	private void saveScaledPhoto(byte[] data) {
 
-		// Resize photo from camera byte array
+//		// Resize photo from camera byte array
 		Bitmap mealImage = BitmapFactory.decodeByteArray(data, 0, data.length);
-		Bitmap mealImageScaled = Bitmap.createScaledBitmap(mealImage, 200, 200
-				* mealImage.getHeight() / mealImage.getWidth(), false);
-
-		// Override Android default landscape orientation and save portrait
+//		Bitmap mealImageScaled = Bitmap.createScaledBitmap(mealImage, 200, 200
+//				* mealImage.getHeight() / mealImage.getWidth(), false);
+//
+//		// Override Android default landscape orientation and save portrait
 		Matrix matrix = new Matrix();
 		matrix.postRotate(90);
-		Bitmap rotatedScaledMealImage = Bitmap.createBitmap(mealImageScaled, 0,
-				0, mealImageScaled.getWidth(), mealImageScaled.getHeight(),
+		Bitmap rotatedScaledMealImage = Bitmap.createBitmap(mealImage, 0,
+				0, mealImage.getWidth(), mealImage.getHeight(),
 				matrix, true);
-
+//
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		rotatedScaledMealImage.compress(Bitmap.CompressFormat.JPEG, 100, bos);
-
-		byte[] scaledData = bos.toByteArray();
+//
+		byte[] rotatedData = bos.toByteArray();
 
 		// Save the scaled image to Parse
 		//doesn't matter if all photos are called panel_photo. each has unique id. 
-		photoFile = new ParseFile("panel_photo.jpg", scaledData);
+		photoFile = new ParseFile("panel_photo.jpg", rotatedData);
 		photoFile.saveInBackground(new SaveCallback() {
 
 			public void done(ParseException e) {

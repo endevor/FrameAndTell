@@ -79,7 +79,7 @@ public class NewPanelFragment extends Fragment
 				//panel.setTitle(panelName.getText().toString());
 
 				// Associate the meal with the current user
-			//	panel.setAuthor(ParseUser.getCurrentUser());
+				panel.setAuthor(ParseUser.getCurrentUser());
 
 				// Add the rating
 			//	panel.setRating(mealRating.getSelectedItem().toString());

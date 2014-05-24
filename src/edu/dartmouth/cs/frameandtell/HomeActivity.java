@@ -1,6 +1,7 @@
 package edu.dartmouth.cs.frameandtell;
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 
 
 import android.app.Activity;
@@ -22,6 +23,10 @@ public class HomeActivity extends Activity {
 		//Runi's IDs
 		Parse.initialize(this, "qdb4KyApeHvYqfcgN2k0Pax6JgOHswxK44MaM9QK", "gxE52nVOiTb2gZmIOp6rnqDBkYblk9JKSWGyf5D4");
 		
+		
+		ParseUser.enableAutomaticUser();
+		ParseUser.getCurrentUser().increment("RunCount");
+		ParseUser.getCurrentUser().saveInBackground();
 		
 		setContentView(R.layout.activity_home);
 	}
