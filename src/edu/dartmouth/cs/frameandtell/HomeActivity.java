@@ -21,7 +21,8 @@ public class HomeActivity extends Activity {
 		//Parse.initialize(this, "gLzHXDmsQotFc8cELJ2QzoGUc4jo62tTbCntJBU5", "hV0GXI8A9OVnuglYNXOhPn5OzGDngEDagPpDQeYo");
 		//Runi's IDs
 		Parse.initialize(this, "qdb4KyApeHvYqfcgN2k0Pax6JgOHswxK44MaM9QK", "gxE52nVOiTb2gZmIOp6rnqDBkYblk9JKSWGyf5D4");
-
+		
+		
 		setContentView(R.layout.activity_home);
 	}
 
@@ -31,22 +32,22 @@ public class HomeActivity extends Activity {
 		getMenuInflater().inflate(R.menu.home_actions, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle presses on the action bar items
-		switch (item.getItemId()) {
-		case R.id.action_home:
-
-			return true;
-		case R.id.activity_timeline:
-			Intent intent1 = new Intent(getApplicationContext(),
-					TimelineActivity.class);
-			startActivity(intent1);
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.action_home:
+	
+	            return true;
+	        case R.id.activity_timeline:
+	    		Intent intent1 = new Intent(getApplicationContext(),
+	    				TimelineActivity.class);
+	    		startActivity(intent1);
+	           return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 
 	public void onMakeClicked(View view) {
@@ -54,7 +55,7 @@ public class HomeActivity extends Activity {
 				NewStoryActivity.class);
 		startActivity(intent);
 	}
-
+	
 	public void onReadClicked(View view) {
 		Intent intent = new Intent(getApplicationContext(),
 				ReaderActivity.class);

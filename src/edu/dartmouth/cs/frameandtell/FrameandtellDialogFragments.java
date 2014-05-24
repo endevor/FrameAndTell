@@ -61,29 +61,29 @@ public class FrameandtellDialogFragments extends DialogFragment {
 			return builder.create();
 
 		case DIALOG_ENTER_TITLE:
-//			textEntryView = new EditText(parent);
-//			textEntryView.setInputType(InputType.TYPE_CLASS_TEXT);
-//			textEntryView.setHint(R.string.story_input_title_hint);
-//			textEntryView.setLines(4);
-//			return new AlertDialog.Builder(parent)
-//			.setTitle(R.string.story_input_title_title)
-//			.setView(textEntryView)
-//			.setPositiveButton(R.string.story_save_title,
-//					new DialogInterface.OnClickListener() {
-//				public void onClick(DialogInterface dialog,
-//						int whichButton) {
-//					((Story)parent).onTitleSet(textEntryView.getText()
-//							.toString());
-//
-//				}
-//			})
-//			.setNegativeButton(R.string.story_cancel_title,
-//					new DialogInterface.OnClickListener() {
-//				public void onClick(DialogInterface dialog,
-//						int whichButton) {
-//					textEntryView.setText("");
-//				}
-//			}).create();
+			textEntryView = new EditText(parent);
+			textEntryView.setInputType(InputType.TYPE_CLASS_TEXT);
+			textEntryView.setHint(R.string.story_input_title_hint);
+			textEntryView.setLines(4);
+			return new AlertDialog.Builder(parent)
+			.setTitle(R.string.story_input_title_title)
+			.setView(textEntryView)
+			.setPositiveButton(R.string.story_save_title,
+					new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog,
+						int whichButton) {
+					((Story)parent).onTitleSet(textEntryView.getText()
+							.toString());
+
+				}
+			})
+			.setNegativeButton(R.string.story_cancel_title,
+					new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog,
+						int whichButton) {
+					textEntryView.setText("");
+				}
+			}).create();
 
 		default:
 			return null;

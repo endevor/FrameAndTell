@@ -25,7 +25,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NewPanelFragment extends Fragment {
+public class NewPanelFragment extends Fragment
+{
 	private ImageButton photoButton;
 	private Button saveButton;
 	private Button cancelButton;
@@ -43,16 +44,25 @@ public class NewPanelFragment extends Fragment {
 			Bundle SavedInstanceState) {
 		View v = inflater.inflate(R.layout.fragment_new_panel, parent, false);
 
-		panelName = ((EditText) v.findViewById(R.id.meal_name));
+		//panelName = ((EditText) v.findViewById(R.id.meal_name));
+
+		// The mealRating spinner lets people assign favorites of meals they've
+		// eaten.
+		// Meals with 4 or 5 ratings will appear in the Favorites view.
+//		mealRating = ((Spinner) v.findViewById(R.id.rating_spinner));
+//		ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter
+//				.createFromResource(getActivity(), R.array.ratings_array,
+//						android.R.layout.simple_spinner_dropdown_item);
+//		mealRating.setAdapter(spinnerAdapter);
 
 		photoButton = ((ImageButton) v.findViewById(R.id.photo_button));
 		photoButton.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				InputMethodManager imm = (InputMethodManager) getActivity()
-						.getSystemService(Context.INPUT_METHOD_SERVICE);
-				imm.hideSoftInputFromWindow(panelName.getWindowToken(), 0);
+//				InputMethodManager imm = (InputMethodManager) getActivity()
+//						.getSystemService(Context.INPUT_METHOD_SERVICE);
+//				imm.hideSoftInputFromWindow(panelName.getWindowToken(), 0);
 				startCamera();
 			}
 		});
@@ -66,7 +76,7 @@ public class NewPanelFragment extends Fragment {
 
 				// When the user clicks "Save," upload the meal to Parse
 				// Add data to the meal object:
-				panel.setTitle(panelName.getText().toString());
+				//panel.setTitle(panelName.getText().toString());
 
 				// Associate the meal with the current user
 			//	panel.setAuthor(ParseUser.getCurrentUser());
