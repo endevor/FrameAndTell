@@ -31,12 +31,14 @@ import android.graphics.BitmapFactory;
 
 public class EditPanelActivity extends Activity {
 	private Panel panel;
+	private Story story;
 //	private ImageButton photoButton;
 //	private ParseImageView panelPreview;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		panel = new Panel();
+		story = new Story();
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		super.onCreate(savedInstanceState);
@@ -53,8 +55,13 @@ public class EditPanelActivity extends Activity {
 			.commit();
 		}
 	}
+
 	public Panel getCurrentPanel() {
 		return panel;
+	}
+	
+	public Story getCurrentStory() {
+		return story;
 	}
 	
 	@Override
@@ -247,7 +254,7 @@ public class EditPanelActivity extends Activity {
 //		switch (item) {
 //
 //		case FrameandtellDialogFragments.ID_PHOTO_PICKER_FROM_CAMERA:
-//			// Take photo from camera，
+//			// Take photo from camera���
 //			// Construct an intent with action
 //			// MediaStore.ACTION_IMAGE_CAPTURE
 //			intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

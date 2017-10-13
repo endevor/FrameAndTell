@@ -1,5 +1,6 @@
 package edu.dartmouth.cs.frameandtell;
 import java.util.Calendar;
+
 import edu.dartmouth.cs.frameandtell.Story;
 
 import android.text.InputType;
@@ -20,6 +21,7 @@ public class FrameandtellDialogFragments extends DialogFragment {
 	public static final int DIALOG_ID_IMAGE_PICKER = 1;
 	public static final int DIALOG_DRAG_AND_DROP = 2;
 	public static final int DIALOG_ENTER_TITLE = 3;
+	public static final int DIALOG_ID_COMMENT = 4;
 
 	// For photo picker selection:
 	public static final int ID_PHOTO_PICKER_FROM_GALLERY = 1;
@@ -61,19 +63,23 @@ public class FrameandtellDialogFragments extends DialogFragment {
 			return builder.create();
 
 		case DIALOG_ENTER_TITLE:
+			AlertDialog.Builder title = new AlertDialog.Builder(parent);
+			
 			textEntryView = new EditText(parent);
 			textEntryView.setInputType(InputType.TYPE_CLASS_TEXT);
 			textEntryView.setHint(R.string.story_input_title_hint);
 			textEntryView.setLines(4);
-			return new AlertDialog.Builder(parent)
+			
+			title
 			.setTitle(R.string.story_input_title_title)
 			.setView(textEntryView)
 			.setPositiveButton(R.string.story_save_title,
 					new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,
 						int whichButton) {
-					((Story)parent).onTitleSet(textEntryView.getText()
-							.toString());
+					String edit = textEntryView.getText().toString();
+					//Story story = new Story(edit);
+					((TimelineActivity)parent).onStorySet(edit);
 
 				}
 			})
@@ -84,6 +90,35 @@ public class FrameandtellDialogFragments extends DialogFragment {
 					textEntryView.setText("");
 				}
 			}).create();
+			
+			return title.create();
+			
+		case DIALOG_ID_COMMENT:
+			AlertDialog.Builder comment = new AlertDialog.Builder(parent);
+			comment.setTitle("Set Title Here:");
+			//set an edittext view to get user input
+			final EditText CommentInput = new EditText (parent);
+			comment.setView(CommentInput);
+
+			comment.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+				public void onClick(DialogInterface dialog, int whichButton) {
+					// TODO Auto-generated method stub
+					Editable Edit = CommentInput.getText();
+					//((TimelineActivity) getActivity()).doPositiveClick();
+					((TimelineActivity) getActivity()).onStorySet(CommentInput.getText().toString());
+				}
+			})
+			.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int whichButton) {
+					// TODO Auto-generated method stub
+					
+					((TimelineActivity) getActivity()).doNegativeClick();
+				}
+			}).create();
+			return comment.create();	
 
 		default:
 			return null;

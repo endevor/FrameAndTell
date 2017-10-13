@@ -10,16 +10,20 @@ public class Story extends Activity {
 	
 	private Panel mPanel;
 
-	Story(String title) {
-		title = this.title;
+	Story() {
+		title = this.title = "";
 		panels = new ArrayList<Panel>();
 	}
 	
 	//setting the title for each panel
 	public void onTitleSet(String s)
 	{
+		this.title = s;
+		//mPanel.setTitle(s);
+	}
+	
+	public void onStoryClicked(String s) {
 		
-		mPanel.setTitle(s);
 	}
 	
 	

@@ -73,16 +73,19 @@ public class NewPanelFragment extends Fragment
 			@Override
 			public void onClick(View v) {
 				Panel panel = ((EditPanelActivity) getActivity()).getCurrentPanel();
+				Story story = TimelineActivity.getCurrentStory();
 
 				// When the user clicks "Save," upload the meal to Parse
 				// Add data to the meal object:
-				//panel.setTitle(panelName.getText().toString());
+
+				panel.setTitle(story.title);
 
 				// Associate the meal with the current user
 				panel.setAuthor(ParseUser.getCurrentUser());
 
 				// Add the rating
 			//	panel.setRating(mealRating.getSelectedItem().toString());
+				//panel.setTemplate(1); //global.paneltemplatechosen
 
 				// If the user added a photo, that data will be
 				// added in the CameraFragment

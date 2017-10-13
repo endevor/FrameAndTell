@@ -8,6 +8,7 @@ import android.app.FragmentManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.graphics.Point;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.SaveCallback;
+
 
 
 public class CameraFragment extends Fragment {
@@ -163,6 +165,16 @@ public class CameraFragment extends Fragment {
 				FragmentManager.POP_BACK_STACK_INCLUSIVE);
 	}
 
+//	public static byte[] mergeImageAndText(String imageFilePath,
+//            String text, Point textPosition) throws IOException {
+//        BufferedImage im = ImageIO.read(new URL(imageFilePath));
+//        Graphics2D g2 = im.createGraphics();
+//        g2.drawString(text, textPosition.x, textPosition.y);
+//        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//        ImageIO.write(im, "png", baos);
+//        return baos.toByteArray();
+//    }
+	
 	@Override
 	public void onResume() {
 		super.onResume();
